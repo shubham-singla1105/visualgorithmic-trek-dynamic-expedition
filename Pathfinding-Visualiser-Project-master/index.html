@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Pathfinding</title>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ui.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/dialoge.css" />
+
+        <script src="js/main.js"></script>
+        <script src="js/components/grid.js"></script>
+        <script src="js/components/node.js"></script>
+
+        <script src="Material Components/Snackbar/snackbar.js"></script>
+        <script src="js/components/dialoge.js"></script>
+
+        <script src="js/algoriithms/pathfinding algorithms/retracePath.js"></script>
+        <script src="js/algoriithms/pathfinding algorithms/dijkstra.js"></script>
+        <script src="js/algoriithms/pathfinding algorithms/DFS.js"></script>
+        <script src="js/algoriithms/pathfinding algorithms/BFS.js"></script>
+        
+        <script src="js/algoriithms/maze generation algorithm/maze.js"></script>
+        <script src="js/algoriithms/maze generation algorithm/Random Maze.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div class="headder-surface">
+            <div class="headder-title-container">
+                <div class="headder-text" draggable="true">Pathfinding Algorithms</div>
+                <div class="headder-options">
+                </div>
+            </div>
+            <div class="options-container">
+                <div class="dropdown-surface surface">
+                    <div class="dropdown-button">
+                        <div class="dropdown-text" id="algo">Algorithms</div>
+                        <img src="https://icons-for-free.com/iconfiles/png/512/arrow+drop+down+24px-131987942837546678.png" class="dropdown-image" />
+                    </div>
+                    <div class="dropdown-list">
+        
+                        <div class="dropdown-list-item">Dijkstra's Algorithm</div>
+                        <div class="dropdown-list-item">Breath-first search</div>
+                      
+                        <div class="dropdown-list-item">Depth-first search</div>
+                    </div>
+                </div>
+                <div class="dropdown-surface surface">
+                    <div class="dropdown-button">
+                        <div class="dropdown-text" id="time">Fast</div>
+                        <img src="https://icons-for-free.com/iconfiles/png/512/arrow+drop+down+24px-131987942837546678.png" class="dropdown-image" />
+                    </div>
+                    <div class="dropdown-list">
+                        <div class="dropdown-list-item">Slow</div>
+                        <!-- <div class="dropdown-list-item">Medium</div> -->
+                        <div class="dropdown-list-item">Fast</div>
+                        
+                    </div>
+                </div>
+                <div class="dropdown-surface surface">
+                    <div class="dropdown-button">
+                        <div class="dropdown-text" id="maze">Create Maze</div>
+                        <img src="https://icons-for-free.com/iconfiles/png/512/arrow+drop+down+24px-131987942837546678.png" class="dropdown-image" />
+                    </div>
+                    <div class="dropdown-list">
+                        <div class="dropdown-list-item">Random Basic Maze</div>
+                                      </div>
+                </div>
+                <div class="button-surface surface" id="start">
+                    <div class="button-text">Start</div>
+                </div>
+                <div class="button-surface surface" id="mazeBuild">
+                    <div class="button-text">Build Maze</div>
+                </div>
+                <div class="button-surface surface" id="clearPath">
+                    <div class="button-text">Clear Path</div>
+                </div>
+                <div class="button-surface surface" id="clearBoard">
+                    <div class="button-text">Clear Board</div>
+                </div>
+            </div>
+        </div>
+        <div class="person"></div>
+        <div class="container">
+            <div class="root" id="root"></div>
+        </div>
+    </body>
+</html>

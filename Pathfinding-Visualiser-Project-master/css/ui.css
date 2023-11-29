@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+    overflow: hidden;
+    margin: 0;
+    background-color: #e9e9e9;
+}
+
+.headder-surface {
+    height: fit-content;
+    width: 100%;
+}
+
+.headder-text {
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.headder-title-container {
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.options-container {
+    width: 100%;
+    height: 40px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.dropdown-surface {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdown-button {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 550;
+    padding-top: 11px;
+    padding-left: 12.5px;
+    font-size: 14px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    background-color: #dedede;
+}
+
+img.dropdown-image {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -20px;
+    right: calc(-100% + 20px);
+}
+
+.dropdown-list {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #00000047;
+    opacity: 1;
+    z-index: 8;
+    display: none;
+}
+
+.dropdown-list-item {
+    height: fit-content;
+    width: calc(100% - 40px);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown-list-item:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown-list-item .hovered {
+    background-color: #f2f2f2;
+}
+
+.headder-options {
+    height: fit-content;
+    width: fit-content;
+    padding-top: 5px;
+}
+
+.surface {
+    display: inline-block;
+}
+
+.button-surface.surface {
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 550;
+    padding-top: 11px;
+    padding-left: 12.5px;
+    font-size: 14px;
+    transition: 0.4s;
+    cursor: pointer;
+    transform: translate(0px, -60%);
+    margin-left: 10px;
+}
+
+.button-surface.surface:hover {
+    background-color: #dedede;
+}

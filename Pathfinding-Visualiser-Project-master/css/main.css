@@ -1,0 +1,98 @@
+html,
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+div#col {
+    border: 1px solid #c6c6c6;
+}
+
+div#col.inverted {
+    border: 1px solid #fff;
+    background-color: black;
+}
+
+.obstacle {
+    background-color: black !important;
+    border: none !important;
+    animation: 0.4s nodeAnimation;
+}
+
+.obstacle.inverted {
+    background-color: white !important;
+    border: none !important;
+}
+
+div#root.root {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+div {
+    /* transition: 0.4s; */
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes nodeAnimation {
+    0% {
+        opacity: 1;
+        border: none;
+        transform: scale(0);
+        z-index: 10;
+    }
+    75% {
+        border: none;
+        opacity: 1;
+        transform: scale(1.2);
+        z-index: 10;
+    }
+    100% {
+        border: none;
+        opacity: 1;
+        transform: scale(1);
+        z-index: 10;
+    }
+}
+
+@keyframes pathAnimation {
+    0% {
+        opacity: 1;
+        border: none;
+        transform: scale(0.4);
+        z-index: 10;
+    }
+    75% {
+        border: none;
+        opacity: 1;
+        transform: scale(1.2);
+        z-index: 10;
+    }
+    100% {
+        border: none;
+        opacity: 1;
+        transform: scale(1);
+        z-index: 10;
+    }
+}
+
+@keyframes visitedNodeAnimation {
+    0% {
+        opacity: 1;
+        border: none;
+        transform: scale(0);
+        z-index: 10;
+        border-radius: 100%;
+    }
+    100% {
+        border: none;
+        opacity: 1;
+        transform: scale(1);
+        z-index: 10;
+        border-radius: 0;
+    }
+}

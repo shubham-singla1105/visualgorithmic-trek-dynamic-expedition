@@ -1,0 +1,28 @@
+
+.snackbar-surface {
+    position: fixed;
+    bottom: 20px;
+    left: 12px;
+    padding: 14px 24px;
+    background-color: #202124;
+    color: white;
+    border-radius: 5px;
+    font-size: 90%;
+    transition: 0.4s;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr 1fr;
+    align-items: center;
+    box-shadow: -2px 3px 3px #00000030;
+}
+
+.snackbar-title {
+    margin-right: 24px;
+}
+
+.snackbar-action-btn {
+    color: #8ab4f8;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0 7px;
+}
