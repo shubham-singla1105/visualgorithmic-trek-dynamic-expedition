@@ -1,4 +1,4 @@
-## Visualgorithmic Trek: Dynamic Expedition
+# Visualgorithmic Trek: Dynamic Expedition
 
 # Overview
 
